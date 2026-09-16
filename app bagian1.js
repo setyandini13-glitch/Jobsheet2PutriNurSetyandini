@@ -14,24 +14,13 @@ const cart = [
  { title: "Keyboard", price: 50, discountPercent: 0 }
 ];
 
-function applyDiscounts(cart) {
- const result = [];
- for (const item of cart) {
-    const discountedPrice = calculateDiscountedPrice(
-        item.price,
-        item.discountPercent
-    );
-    
-    result.push({
-        title: item.title,
-        price: item.price,
-        discountPercent: item.discountPercent,
-        discountedPrice: discountedPrice
-        });
+const result = [];
+    for (const item of cartItems) {
+        const discountedPrice = item.price - (item.price * item.discountPercent) / 100;
+        result.push({ title: item.title, discountedPrice });
     }
-
     return result;
 }
 
-console.log(applyDiscounts(cart));
-
+const discountedCart = calculateCartDiscounts(cart);
+console.log(discountedCart);
