@@ -20,7 +20,6 @@ const result = [];
         result.push({ title: item.title, discountedPrice });
     }
     return result;
-}
 
 const discountedCart = calculateCartDiscounts(cart);
 console.log(discountedCart);
