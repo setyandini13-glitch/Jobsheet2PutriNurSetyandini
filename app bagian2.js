@@ -1,7 +1,7 @@
 const products = [
     { id: 1, title: "Laptop", price: 1500, category: "laptops", stock: 6 },
     { id: 2, title: "Headphones", price: 100, category: "audio", stock: 7 },
-    { id: 3, title: "Smartphone", price: 800, category: "phones", stock: 10 }
+    { id: 3, title: "Smartphone", price: 800, category: "phones", stock: 10 },
     { id: 4, title: "Wireless Mouse", price: 50, category: "accessories", stock: 45 },
     { id: 5, title: "Mechanical Keyboard", price: 75, category: "accessories", stock: 25 },
     { id: 6, title: "Gaming Monitor", price: 400, category: "monitors", stock: 6 },
