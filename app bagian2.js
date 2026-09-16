@@ -42,3 +42,11 @@ const stokbarangkurangdari10 = products.filter(product => product.stock < 10);
 
 console.log("Produk dengan stok kurang dari 10: ");
 console.log(stokbarangkurangdari10);
+
+//Latihan 2.3
+function updateStock(products, id, newStock) 
+{ 
+    return products.map(p => p.id === id ? { ...p, stock: newStock } : p ); 
+
+}
+console.log(updateStock(products, 21, 21))
